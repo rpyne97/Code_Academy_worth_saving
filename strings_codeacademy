@@ -1,0 +1,19 @@
+#Strip whitespace and join by newline
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+
+love_maybe_lines_stripped = []
+#Strip  whitespace for each element(line) of the list and append to new list
+for line in love_maybe_lines:
+  love_maybe_lines_stripped.append(line.strip())
+#Join elements of the stripped list
+love_maybe_fell = ','.join(love_maybe_lines_stripped)
+
+#Print variables with a string - use \n to escape "
+def poem_title_card(title, poet):
+  return "The poem \"{}\" is written by {}.".format(title, poet)
+
+#Review exercise
+highlighted_poems = "Afterimages:Audre Lorde:1997,  The Shadow:William Carlos Williams:1915, Ecstasy:Gabriela Mistral:1925,   Georgia Dusk:Jean Toomer:1923,   Parting Before Daybreak:An Qi:2014, The Untold Want:Walt Whitman:1871, Mr. Grumpledump's Song:Shel Silverstein:2004, Angel Sound Mexico City:Carmen Boullosa:2013, In Love:Kamala Suraiyya:1965, Dream Variations:Langston Hughes:1994, Dreamwood:Adrienne Rich:1987"
+highlighted_poems_list = highlighted_poems.split(',')
+
+"The poem \"{}\" is written by {}.".format(title, poet)

@@ -1,0 +1,23 @@
+#Install pipenv
+#Note: tried to install with <$ pip install --user> but could not find executable directory to add to path
+% brew install pipenv
+
+#make a directory for new python environment
+% mkdir Pipenv_test
+#Create a virtual environment with python 3
+% pipenv --three
+#Two files created
+#These can be shared with others to recreate the python programming
+% ls -a
+.               ..              Pipfile         Pipfile.lock
+#Install a library that you would like to use in this virtual environment
+#Note: because no version specified, latest numpy version installed
+% pipenv install numpy
+#Now install requests library with version specified
+% pipenv install requests==2.8.1
+#Information on libraries is specified in pipfile.lock file
+
+#Now enter the shell of your Python virtual environment
+% pipenv shell
+#Now start python interpreter
+% python3
